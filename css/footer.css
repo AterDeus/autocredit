@@ -1,0 +1,117 @@
+.mainFooter {
+	display: block;
+	position: relative;
+	width:100%;
+	height:393px;
+}
+.footerNav {
+	width:100%;
+	height: 63px;
+	background:#112e5d;
+}
+.footerNav div,
+.footerInfo div {
+	width:980px;
+	height:100%;
+	display: block;
+	margin: 0px auto;
+	font-family: 'ProximaNovaA-Semibold';
+}
+.footerInfo div {
+	height:230px;
+}
+.footerNavLinks {
+	padding: 0px 18px;
+	line-height: 63px;
+	color: #fff;
+	border-left: 1px solid #000;
+	opacity: 0.8;
+	font-family: 'ProximaNova-Semibold';
+}
+.footerNavLinks:hover {
+	opacity: 1;
+	color: #fff;
+}
+.footerNavLinks:first-child {
+	padding-left: 0;
+	border: 0;
+}
+.footerNavLinks:last-child {
+	padding-right: 0;
+}
+.footerInfo {
+	width:100%;
+	height:345px;
+	background: #0e203e;
+}
+.footerInfo ul {
+	color: #fff;
+	font-size: 14px;
+	margin-top: 35px;
+	font-family: 'ProximaNova-Semibold';
+	padding: 0px 45px;
+	height: 195px;
+	border-bottom: 1px solid rgb(14,38,76);
+}
+.footerInfo ul:first-child {	
+	padding-left: 0;
+}
+.footerInfo ul li {
+	font-family: 'Proxima Nova';
+	margin: 0;
+}
+.footerInfo ul li:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.footerInfo ul li.title {
+	color:#458bff;
+	padding: 10px 0px;
+	font-size: 16px;
+}
+
+.bottomLine {
+	width: 980px;
+	height: 92px;
+	display:block;
+	margin:0px auto;
+	position: relative;
+}
+.bottomLine p.copy {
+	width: 100%;
+	text-align: center;
+	color: #4077ec;
+	font-size: 14px;
+	top:35px;
+	padding-right: 55px;
+	position: relative;
+}
+.bottomLine img {
+	position: absolute;
+	left: 0;
+	bottom: 18px;
+}
+.bottomLine div {
+	position: absolute;
+	height: auto;
+	right:0px;
+	color: #fff;
+	width:auto;
+	bottom: 15px;
+}
+.bottomLine div p {
+	width: 160px;
+	display: inline-block;
+	vertical-align: bottom;
+	margin: 0;
+	font-family: 'ProximaNova-Semibold';
+}
+.bottomLine div i {
+	display: inline-block;
+	padding: 10px 18px;
+	border-radius: 5px;
+	margin-left: 5px;
+	font-size: 20px;
+	width:auto;
+	border: 2px solid rgba(14,38,76, 0.9);
+}

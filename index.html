@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="css/style.css" rel="stylesheet">
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/velocity.min.js"></script>
+		<script src="js/velocity.ui.js"></script>
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="gradientMap">
+		</div>
+		<header class="topBG">
+			<div class="contactForm">
+				<i class="fa fa-close"></i>
+				<input type="text" placeholder="Ваше имя">
+				<input type="text" placeholder="Email">
+				<textarea type="text" placeholder="Ждем ваши вопросы, отзывы, предложения"></textarea>
+				<button type="button" class="btn sendAway btn-primary">Отправить</button>
+				<img src="images/script.png">
+			</div>
+		</header>
+		<header class="mainHeader">
+			<img src="images/logo.png" class="logo">
+			<div class="topline">
+				<ul class="nav nav-tabs" role="tablist">
+  					<li>
+  						<a class="underlines" href="#">Вопросы и ответы</a>
+  					</li>
+  					<li>
+  						<a class="underlines" href="#">Личный кабинет</a>
+  					</li>
+  					<li class="inset">
+  						<a href="#">Обратная связь</a>
+  					</li>
+  					<li>
+  						<a href="https://www.facebook.com/davaisravnim"><i class="fa fa-facebook"></i></a>
+  					</li>
+  					<li>
+  						<a href="http://vk.com/davaisravnim" class="vk"><img src="images/vk-logo.png"></a>
+  					</li>
+				</ul>
+			</div>
+			<div class="input-group subscribe">
+  				<input type="text" class="form-control" placeholder="Введите Email, чтобы подписаться на полезную рассылку ;)">	
+  				<span style="display:none;" class="input-group-addon">Подписаться</span>
+  				<button type="button" class="subscribeButton">
+					<p>подписаться</p>
+  				</button> 	
+			</div>
+			<nav class="navbar navbar-default" role="navigation">
+      			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        		<span class="sr-only">Toggle navigation</span>
+  				<div class="btn-group">
+				    <button type="button" class="btn btn-primary leftRadius">
+				    	<a href="/"><span></span></a>
+				    </button>
+				</div>
+				<div class="btn-group dropdown">
+				    <button type="button" class="btn btn-primary dropdown-toggle noRadius" data-toggle="dropdown">
+				    	Деньги 
+				    </button>
+					<ul class="dropdown-menu" role="menu">
+		            	<li><a href="/finance/cc/compare/">Кредитные карты</a></li>
+		            	<li><a href="/finance/deposits/compare/">Вклады</a></li>
+		            	<li><a href="#">Ипотека</a></li>
+					</ul>
+				</div>
+				<div class="btn-group dropdown">
+				    <button type="button" class="btn btn-primary dropdown-toggle noRadius" data-toggle="dropdown">
+				    	Страховки 
+					</button>
+					<ul class="dropdown-menu" role="menu">
+		            	<li><a href="/insurance/car/online">КАСКО</a></li>
+		            	<li><a href="/insurance/car/osago">ОСАГО</a></li>
+		            	<li><a href="#">Поездки</a></li>
+					</ul>
+				</div>
+				<div class="btn-group dropdown">
+				    <button type="button" class="btn btn-primary dropdown-toggle noRadius" data-toggle="dropdown">
+				    	Мобильная связь 
+					</button>
+					<ul class="dropdown-menu" role="menu">
+		            	<li><a href="/mobile/#/phone">Для Телефона</a></li>
+		            	<li><a href="/mobile/#/smart">Для Смартфона</a></li>
+		            	<li><a href="/mobile/#/modem">Для Планшета</a></li>
+					</ul>
+				</div>
+				<div class="btn-group dropdown">
+				    <button type="button" class="btn btn-primary dropdown-toggle noRadius" data-toggle="dropdown">
+				    	Путешествия 
+					</button>
+					<ul class="dropdown-menu" role="menu">
+		            	<li><a href="#">Авиабилеты</a></li>
+		            	<li><a href="#">Отели</a></li>
+		            	<li><a href="#">Экскурсии</a></li>
+		            	<li><a href="#">Туры</a></li>
+					</ul>
+				</div>
+				<div class="btn-group">
+				    <button type="button" class="btn btn-primary rightRadius">
+				    	Купоны
+					</button>
+				</div>
+			</nav>
+		</header>
+		<div class="mainContainer">
+			<section class="commercialSection col-xs-8">
+				<div>
+					<h3>
+						Давай Сравним — это независимый сайт сравнения цен на страхование, кредитные карты и мобильные тарифы.
+					</h3>
+					<p>
+						Мы существуем для того, чтобы вы сделали правильный выбор легко и быстро. Хотите лучшую сделку? Мы вам поможем!
+					</p>
+				</div>
+				<br />
+				<button class="btn orange">Узнать больше</button>
+			</section>
+			<section class="devicesMenu col-xs-4">
+				<h3>Сравни и выбери</h3>
+				<ul>
+					<li><a href="/finance/cc/compare/">Кредитные карты</a></li>
+					<li><a href="/finance/deposits/compare/">Страхование в поездках</a></li>
+					<li><a href="/insurance/car/online">Автострахование</a></li>
+					<li><a href="/mobile/">Мобильные тарифы</a></li>
+					<li><a href="#">Авиаперелеты</a></li>
+					<li><a href="#">Отели</a></li>
+				</ul>
+			</section>
+			<section class="iconBlocks col-xs-3">
+				<h4>
+					Кредитные карты
+				</h4>
+				<p>
+					Выберите самую выгодную кредитную карту
+					<a href="/finance/cc/compare">Сравнить полисы <i class="fa fa-angle-double-right"></i></a>
+				</p>
+				<img src="images/card-ico.png">
+			</section>
+			<section class="iconBlocks col-xs-3">
+				<h4>
+					Автострахование
+				</h4>
+				<p>
+					Сравните тарифы 14 ведущих страховых компаний
+					<a href="/insurance/car/online">Сравнить полисы <i class="fa fa-angle-double-right"></i> </a>
+				</p>
+				<img src="images/car-ico.png">
+			</section>
+			<section class="iconBlocks last col-xs-3">
+				<h4>
+					Мобильные тарифы
+				</h4>
+				<p>
+					Экономьте до 30% расходов на мобильную связь
+					<a href="/mobile">Сравнить полисы <i class="fa fa-angle-double-right"></i> </a>
+				</p>
+				<img src="images/phone-ico.png">
+			</section>
+			<section class="partnerSection col-xs-10">
+				<div class="content">
+					<img src="images/partners.png">
+				</div>
+			</section>
+			<a class="seeAll" href="">
+				показать всех партнеров
+			</a>
+			<section class="commercialSection slogan col-xs-8">
+				<div class="content">
+					<h2>Мы всегда на вашей стороне – бережём ваши нервы и деньги</h2>
+
+					<p>Наверное, все уже привыкли, что выбирать кредитную карту, вклад или страховку – это сложно, долго и нудно. Кто из нас не мечтал о грамотном финансовом консультанте, который помог бы сделать правильный выбор? Но консультант стоит дорого и не всегда беспристрастен.</p>
+
+					<p>Так почему бы не разобраться во всём и не сделать правильный выбор самостоятельно? Тем более теперь это занимает всего несколько минут. Мы разработали инструмент, который поможет вам сравнить лучшие предложения на рынке
+					и выбрать наиболее подходящее – легко и непринуждённо.</p>
+				</div>
+			</section>
+			<section class="commercialSection iconPark col-xs-8">
+				<div class="col-xs-4">
+					<article>
+						<figure>
+							<img src="images/ico1.png" alt="">
+						</figure>
+						<p>
+							Мы независимы от банков и страховых компаний
+						</p>
+					</article>
+					<article>
+						<figure>
+							<img src="images/ico2.png" alt="">
+						</figure>
+						<p>
+							У нас нет проплаченных предложений и рекламы
+						</p>
+					</article>
+				</div>
+				<div class="col-xs-4">
+					<article>
+						<figure>
+							<img src="images/ico3.png" alt="">
+						</figure>
+						<p>
+							Не берём деньги за услуги и комиссии за покупки
+						</p>
+					</article>
+					<article>
+						<figure>
+							<img src="images/ico4.png" alt="">
+						</figure>
+						<p>
+							Никакого мелкого текста – все условия просты и понятны
+						</p>
+					</article>
+				</div>
+				<div class="col-xs-4">
+					<article>
+						<figure>
+							<img src="images/ico5.png" alt="">
+						</figure>
+						<p>
+							Только крупные и проверенные партнёры
+						</p>
+					</article>
+					<article>
+						<figure>
+							<img src="images/ico6.png" alt="">
+						</figure>
+						<p>
+							Отзывы реальных пользователей
+						</p>
+					</article>
+				</div>
+			</section>
+			<section class="bonusSection col-xs-7">
+				<ul class="nav nav-pills">
+  					<li class="active"><a href="#">Что говорят люди</a></li>
+  					<li><a href="#">Прочитать что о нас пишут в социальных сетях</a></li>
+				</ul>
+				<div class="col-xs-8">
+					<img src="images/bonus.jpg">
+				</div>
+			</section>
+			<section class="bonusMenu col-xs-5">
+				<h5>Комментарии эксперта</h5>
+				<div>
+					<img src="images/reply2.png">
+				</div>
+			</section>
+			<section class="articleSection col-xs-8">
+				<ul class="nav nav-pills">
+  					<li class="active"><a href="#">Полезные статьи</a></li>
+  					<li><a href="#">Новости по всем разделам</a></li>
+				</ul>
+			<div class="articleContainer">			
+					<article class="col-xs-3 first">
+						<div>
+							<img src="images/istock_news1.png">
+							<p>26 августа 2014</p>
+							<p>Как выбрать кредитную карту?</p>
+						</div>
+					</article>
+					<article class="col-xs-3">
+						<div>
+							<img src="images/istock_news4.png">
+							<p>26 августа 2014</p>
+							<p>Как выбрать кредитную карту?</p>
+						</div>
+					</article>
+					<article class="col-xs-3">
+						<div>
+							<img src="images/istock_news3.png">
+							<p>26 августа 2014</p>
+							<p>Как выбрать кредитную карту?</p>
+						</div>
+					</article>
+					<article class="col-xs-3">
+						<div>
+							<img src="images/istock_news2.png">
+							<p>26 августа 2014</p>
+							<p>Как выбрать кредитную карту?</p>
+						</div>
+					</article>
+			</div>
+			</section>
+			<a class="seeAll" href="">
+				показать все статьи
+			</a>
+			<section class="commercialSection slogan col-xs-8">
+				<div class="content">
+					<h2>Мы всегда на вашей стороне – бережём ваши нервы и деньги</h2>
+
+					<p>Наверное, все уже привыкли, что выбирать кредитную карту, вклад или страховку – это сложно, долго и нудно. Кто из нас не мечтал о грамотном финансовом консультанте, который помог бы сделать правильный выбор? Но консультант стоит дорого и не всегда беспристрастен.</p>
+
+					<p>Так почему бы не разобраться во всём и не сделать правильный выбор самостоятельно? Тем более теперь это занимает всего несколько минут. Мы разработали инструмент, который поможет вам сравнить лучшие предложения на рынке
+					и выбрать наиболее подходящее – легко и непринуждённо.</p>
+				</div>
+			</section>
+		</div>
+		<footer class="mainFooter">
+			<nav class="footerNav">
+				<div>
+					<a href="" class="footerNavLinks"><i class="fa fa-home"></i></a>
+					<a href="" class="footerNavLinks">О Нас</a>
+					<a href="" class="footerNavLinks">Контакты</a>
+					<a href="" class="footerNavLinks">Безопасность</a>
+					<a href="" class="footerNavLinks">Конфиденциальность</a>
+					<a href="" class="footerNavLinks">Условия использования</a>
+					<a href="" class="footerNavLinks">Инвенсторам</a>
+					<a href="" class="footerNavLinks">Карта сайта</a>
+				</div>
+			</nav>
+			<section class="footerInfo">
+				<div>
+					<ul class="col-xs-3">
+						<li class="title">Деньги</li>
+						<li>Кредитные карты</li>
+						<li>Вклады</li>
+						<li>Ипотека</li>
+						<li>Потребительские кредиты</li>
+						<li>Автокредиты</li>
+						<li>Денежные переводы</li>
+					</ul>
+					<ul class="col-xs-3">
+						<li class="title">Страховки</li>
+						<li>Автострахование</li>
+						<li>Поездки</li>
+						<li>Медицина</li>
+						<li>Несчастный случай</li>
+						<li>Имущество</li>
+						<li>Животное</li>
+					</ul>
+					<ul class="col-xs-3">
+						<li class="title">Мобильная связь</li>
+						<li>Для телефона</li>
+						<li>Для смартфона</li>
+						<li>Для планшета</li>
+						<li class="title">Купоны</li>
+						<li>Все купоны</li>
+					</ul>
+					<ul class="col-xs-3">
+						<li class="title">Путешествия</li>
+						<li>Авиабилеты</li>
+						<li>Ж/Д Билеты</li>
+						<li>Билеты на автобус</li>
+						<li>Отели</li>
+						<li>Кварты посуточно</li>
+						<li>Экскурсии</li>
+						<li>Туры</li>
+					</ul>
+				</div>
+				<figure class="bottomLine">
+					<img src="images/footer_logo.png">
+					<p class="copy">© 2014 Давай Сравним</p>
+					<div>
+						<p>Напишите нам privet@davaisravnim.com</p>
+						<i>
+							<a href="http://facebook.com/davaisravnim"><span class="fa fa-facebook"></span></a>
+						</i>
+						<i>
+							<a href="http://vk.com/davaisravnim"><span>B</span></a>
+						</i>
+					</div>
+				</figure>
+			</section>
+		</footer>
+		<script type="text/javascript">
+			var inset = $('li.inset a'),
+				sendAway = $('.sendAway'),
+				closeX = $('.topBG i.fa-close'),
+				contactContainer = $('.topBG'),
+				gradientMap = $('.gradientMap'),
+				script = $('.contactForm img'),
+				formContent = $('.contactForm *').not(script);
+				inset.bind('click', bounceForm);
+				sendAway.bind('click', formBounceAway);
+				closeX.bind('click', formBounceAway);
+			function bounceForm() {
+				el = $(this);
+				el.css('color', '#ff8721');
+				gradientMap.velocity({
+					'top': '420px'
+				}, 300);
+				contactContainer.velocity({
+					'height': '420px'
+				}, 300).promise().done(function(){
+					formContent
+					.velocity('transition.bounceLeftIn', { stagger: 150 })
+					.promise()
+					.done(function(){
+						script.velocity('transition.fadeIn', 600);
+					})
+				});
+				return false;
+			}
+			function formBounceAway() {
+				closeX.velocity({
+					'transform': 'rotate(180deg)'
+				}, 300);
+				script
+				.velocity('transition.fadeOut', 300)
+				.promise()
+				.done(function() {
+					formContent
+					.velocity('transition.bounceRightOut', { stagger: 150 })
+					.promise()
+					.done(function() {
+						gradientMap.velocity({
+							'top': '7px'
+						}, 300);
+						contactContainer.velocity({
+							'height': '7px'
+						}, 300)
+						inset.css('color', '#fff');
+					});
+				});
+				return false;
+			}
+
+		</script>
+	</body>
+</html>

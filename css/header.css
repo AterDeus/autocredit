@@ -1,0 +1,437 @@
+* {
+	box-sizing:border-box;
+	font-family: 'ProximaNovaA-Semibold';
+	-webkit-font-smoothing: antialiased;
+}
+
+html, body {
+	width: 100%;
+	height:100%;
+	min-width: 980px;
+}
+body {
+	background-color: #035eb3;
+}
+.gradientMap {
+	width:100%;
+	height:100%;
+	position: absolute;
+	z-index: 0;
+	top:6px;
+	opacity: 0.2;
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+.mainContainer {
+	overflow: hidden;
+}
+.mainContainer,
+.mainHeader {
+	width:980px;
+	min-width: 980px;
+	height:auto;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+}
+.topBG {
+	width:100%;
+	background-color: #03599e;
+	height:6px; 
+	border-bottom: 1px solid rgba(255,255,255, 0.3);
+}
+.topBG i.fa-close {
+	display: none;
+	position: absolute;
+	right: -780px;
+	top:0px;
+	font-size: 24px;
+	color: rgba(0,0,0, 0.2);
+	cursor: pointer;
+}
+.topBG i.fa-close:hover {
+	color:#ff8721;
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.contactForm {
+	width: 450px;
+	top:80px;
+	margin: 0px auto;
+	left:-120px;
+	position: relative;
+	display: block;
+}
+.contactForm input,
+.contactForm button {
+	height:40px;
+	border: 0;
+}
+.contactForm textarea {
+	padding: 10px 17px;
+	height: 122px;
+	max-height: 140px;
+	max-width: 450px;
+	overflow: hidden;
+	border: 0;
+}
+.contactForm img {
+	position: absolute;
+	right: -300px;
+	width: 300px;
+	bottom: 17px;
+}
+.contactForm button {
+	padding: 0;
+	font-family: 'ProximaNova-Semibold';
+	font-size: 16.8px;   
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.7), inset 0 -0.1px 0 rgba(0,0,0,.15), inset 0 -0.1px 0 rgba(255,255,255,.1), 0 -0.1px 0 rgba(0,0,0,.05);
+	margin-top: 0px;
+	background: rgb(0,175,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(0,175,255,1) 0%, rgba(0,152,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,175,255,1)), color-stop(100%,rgba(0,152,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,175,255,1) 0%,rgba(0,152,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,175,255,1) 0%,rgba(0,152,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,175,255,1) 0%,rgba(0,152,255,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0,175,255,1) 0%,rgba(0,152,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00afff', endColorstr='#0098ff',GradientType=0 ); /* IE6-9 */
+	border-color: #00a2ff;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.36);
+}
+.contactForm input:first-child {
+	margin-top:89px;
+}
+.contactForm input::-webkit-input-placeholder 	 {line-height: 20px; font-size: 16px; color:#6b6c6c; font-family: 'Proxima Nova'; }
+.contactForm input::-moz-placeholder          	 {line-height: 40px; font-size: 16px; color:#6b6c6c; font-family: 'Proxima Nova'; }/* Firefox 19+ */
+.contactForm input:-moz-placeholder           	 {line-height: 40px; font-size: 16px; color:#6b6c6c; font-family: 'Proxima Nova'; }/* Firefox 18- */
+.contactForm input:-ms-input-placeholder      	 {line-height: 20px; font-size: 16px; color:#6b6c6c; font-family: 'Proxima Nova'; }
+.contactForm textarea::-webkit-input-placeholder {line-height: 20px; font-size: 16px; color:#6b6c6c; font-family: 'Proxima Nova'; }
+.contactForm textarea::-moz-placeholder          {line-height: 20px; font-size: 16px; color:#6b6c6c; font-family: 'Proxima Nova'; }/* Firefox 19+ */
+.contactForm textarea:-moz-placeholder           {line-height: 20px; font-size: 16px; color:#6b6c6c; font-family: 'Proxima Nova'; }/* Firefox 18- */
+.contactForm textarea:-ms-input-placeholder      {line-height: 20px; font-size: 16px; color:#6b6c6c; font-family: 'Proxima Nova'; }
+
+.contactForm input:focus::-webkit-input-placeholder 	 {line-height: 100px; transition: line-height 0.5s ease;}
+.contactForm input:focus::-moz-placeholder 				 {line-height: 100px; transition: line-height 0.5s ease;}
+.contactForm input:focus:-moz-placeholder 				 {line-height: 100px; transition: line-height 0.5s ease;}
+.contactForm input:focus:-ms-input-placeholder      	 {line-height: 100px; transition: line-height 0.5s ease;}
+.contactForm textarea:focus::-webkit-input-placeholder 	 {line-height: 300px; transition: line-height 0.5s ease;}
+.contactForm textarea:focus::-moz-placeholder 			 {line-height: 300px; transition: line-height 0.5s ease;}
+.contactForm textarea:focus:-moz-placeholder 			 {line-height: 300px; transition: line-height 0.5s ease;}
+.contactForm textarea:focus:-ms-input-placeholder      	 {line-height: 300px; transition: line-height 0.5s ease;}
+
+.contactForm * {
+	padding: 0px 17px;
+	margin: 5px auto;
+	display: none;
+	width: 100%;
+	border-radius: 5px;
+	font-family: 'ProximaNovaA-Semibold';	
+}
+
+.mainHeader {
+	height:168px;
+}
+.mainHeader nav {
+	width: auto;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	font-size: 0;
+	background: 0;
+	border: 0;
+	height: auto;
+	margin: 0;
+	min-height: 40px;
+	box-shadow: 1px 2px 3px rgba(0,0,0,0.4)
+}
+.mainHeader .logo {
+	margin-top: 30px;
+	margin-left: 5px;
+}
+.mainHeader nav .btn {
+	font-family: 'ProximaNova-Semibold';
+	letter-spacing: 0.4px;
+	font-weight: 100;
+	font-size: 16.8px;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 9px 44px;
+	background: rgb(0,175,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(0,175,255,1) 0%, rgba(0,152,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,175,255,1)), color-stop(100%,rgba(0,152,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,175,255,1) 0%,rgba(0,152,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,175,255,1) 0%,rgba(0,152,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,175,255,1) 0%,rgba(0,152,255,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0,175,255,1) 0%,rgba(0,152,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00afff', endColorstr='#0098ff',GradientType=0 ); /* IE6-9 */
+	border-color: #00a2ff;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.36);
+}
+.mainHeader .topline {
+	width:59%;
+	height:30px;
+	position: absolute;
+	top:-4px;
+	z-index: 100;
+	right:0;
+	text-align: right;
+}
+.mainHeader .topline ul.nav-tabs li.inset {
+	background:#03599e;
+	border-color: transparent;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px; 
+	border: 1px solid #6a87db;
+	border-top: 0;
+	height: 37px;
+	top:3px;
+	width:180px;
+	text-align: center;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-right: 0;
+	border-left: 0;
+	border-bottom-color: rgba(65,102,209, 0.7);
+	cursor: pointer;
+}
+.mainHeader .topline ul.nav-tabs li.inset a {
+	bottom: 3px;
+}
+.mainHeader .topline ul.nav-tabs li.inset a,
+.mainHeader .topline ul.nav-tabs li a:hover  {
+	background: transparent;
+	border-color: transparent;
+}
+.mainHeader .topline ul.nav-tabs li a {
+	font-size: 14px;
+	color: #fff;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.46);
+	font-family: 'ProximaNova-Semibold';
+}
+.mainHeader .topline ul.nav-tabs li a.underlines:after {
+	content: ' ';
+	width: 79.5%;
+	height: 1px;
+	background: #6a87db;
+	position: absolute;
+	margin: 5px 5px;
+	bottom: 8px;
+	left: 10px;
+}
+.mainHeader .topline ul.nav-tabs li a.vk img {
+	width: 12px;
+	height: auto;
+	vertical-align: text-top;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.46);
+
+}
+.mainHeader .topline ul.nav-tabs li:last-child::before {
+	position: absolute;
+	content: ' ';
+	background: rgba(0,0,0, 0.2);
+	left: 0;
+	border: 0;
+	width: 1px;
+	height: 40%;
+	bottom: 12px;
+}
+.mainHeader .topline ul.nav-tabs li a i {
+	font-size: 16px;
+	vertical-align: text-top;
+}
+.mainHeader .topline ul li {
+	border-radius: 5px;
+}
+.mainHeader .topline ul.nav-tabs {
+	border-bottom-color: transparent;
+	font-size: 0;
+}
+.mainHeader nav .btn.leftRadius:hover,
+.mainHeader nav .btn.rightRadius:hover {
+	color:#ff7600 !important;
+	text-shadow:none;
+	background: #fff;
+	border: 0;
+	border-left:1px solid #fff !important;
+	border-right:1px solid #fff !important;
+
+}
+.mainHeader nav .btn.leftRadius span {
+	background-image: url(../images/home1.png);
+	background-size: cover;
+	width:22px;
+	height:24px;
+	display: block;
+
+}
+.mainHeader nav .btn.leftRadius:hover span {
+	background-image: url(../images/home2.png);
+
+}
+.mainHeader nav .btn {
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.7), inset 0 -0.1px 0 rgba(0,0,0,.15), inset 0 -0.1px 0 rgba(255,255,255,.1), 0 -0.1px 0 rgba(0,0,0,.05);
+	-webkit-transition: color 0.3s linear;
+	-moz-transition: color 0.3s linear;
+	-ms-transition: color 0.3s linear;
+	-o-transition: color 0.3s linear;
+	transition: color 0.3s linear;
+	border-top:0;
+	border-bottom: 0;
+}
+.mainHeader nav .btn.noRadius {	
+	top: 0px;
+	left: 0px;
+	border-radius: 0;
+	border-right: 1px solid rgba(255,255,255,0.3);
+	border-left: 1px solid rgba(0,154,225,0.31);
+}
+.mainHeader nav .btn.noRadius:hover::before {
+	position: absolute;
+	top: 0px;
+	height:3px;
+	background: #ff5500;
+	content: ' ';
+	left: 0;
+	width:100%;	
+}
+.mainHeader nav .btn.noRadius:hover {	
+	top: 0px;
+	left: 0px;
+	color: #ff5500 !important;
+	border-left:1px solid #fff !important;
+	border-right:1px solid #fff !important;
+	background: #fff;
+	text-shadow: 0px 0px 0px;
+}
+.mainHeader nav .btn.leftRadius {
+	border-bottom-right-radius: 0;
+	border-top-right-radius:0;
+	border-left-color: transparent;
+	border-right: 1px solid rgba(255,255,255,0.3);
+	padding: 9px 12px;
+}
+.mainHeader nav .btn.rightRadius {
+	border-bottom-left-radius: 0;
+	border-top-left-radius:0;
+	border-right-color: transparent;
+	border-left: 1px solid rgba(0,154,225,0.21);
+}
+.mainHeader nav .btn.rightRadius:hover::before {
+	position: absolute;
+	top: 0px;
+	height:3px;
+	background: #ff5500;
+	content: ' ';
+	left: 0;
+	width:100%;
+}
+.mainHeader .input-group {
+	width: 57%;
+	position: absolute;
+	top: 65px;
+	right: 4px;
+}
+.mainHeader .input-group input.form-control::-webkit-input-placeholder {line-height: 20px; color:#00a1ff; font-family: 'ProximaNova-Semibold'; }
+.mainHeader .input-group input.form-control::-moz-placeholder          {line-height: 20px; color:#00a1ff; font-family: 'ProximaNova-Semibold'; }/* Firefox 19+ */
+.mainHeader .input-group input.form-control:-moz-placeholder           {line-height: 20px; color:#00a1ff; font-family: 'ProximaNova-Semibold'; }/* Firefox 18- */
+.mainHeader .input-group input.form-control:-ms-input-placeholder      {line-height: 20px; color:#00a1ff; font-family: 'ProximaNova-Semibold'; }
+
+.mainHeader .input-group input.form-control:focus::-webkit-input-placeholder {line-height: 100px; transition: line-height 0.5s ease;}
+.mainHeader .input-group input.form-control:focus::-moz-placeholder          {line-height: 100px; transition: line-height 0.5s ease;}
+.mainHeader .input-group input.form-control:focus:-moz-placeholder           {line-height: 100px; transition: line-height 0.5s ease;}
+.mainHeader .input-group input.form-control:focus:-ms-input-placeholder      {line-height: 100px; transition: line-height 0.5s ease;}
+
+.mainHeader .input-group .subscribeButton {
+	border-radius: 3px;
+	background: rgb(0,175,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(0,175,255,1) 0%, rgba(0,152,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,175,255,1)), color-stop(100%,rgba(0,152,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,175,255,1) 0%,rgba(0,152,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,175,255,1) 0%,rgba(0,152,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,175,255,1) 0%,rgba(0,152,255,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0,175,255,1) 0%,rgba(0,152,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00afff', endColorstr='#0098ff',GradientType=0 ); /* IE6-9 */
+	border: 0;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 10px;
+	position: absolute;
+	top: 5.5px;
+	right: 10px;
+	font-weight: 700;
+	font-family: 'ProximaNova-Semibold';
+    box-shadow: inset 0 1px 0 rgba(171,229,255, .5), inset 0 -0.1px 0 rgba(0,0,0,.15), inset 0 -0.1px 0 rgba(255,255,255,.1), 0 -0.1px 0 rgba(0,0,0,.05);
+	letter-spacing: 0;
+}
+.mainHeader .dropdown.open .dropdown-menu {
+	margin-top:-1px;
+	margin-left: -1px;
+	border-top: #fff;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+
+}
+.mainHeader .dropdown.open .dropdown-menu > li > a, 
+.mainHeader .dropdown.open .dropdown-menu > li > a {
+	color: #0e499a;
+	padding: 5px 45px;
+}
+.mainHeader .dropdown.open > .btn {
+	background: #fff;
+	border: 1px solid transparent;
+	border-top: 0;
+	border-bottom: 0;
+	color: #ff5500;
+	box-shadow: 0px 0px 0px;
+	text-shadow: 0px 0px 0px;
+}
+.mainHeader .dropdown.open > .btn:before {
+	position: absolute;
+	top: 0px;
+	height:3px;
+	background: #ff5500;
+	content: ' ';
+	left: 0;
+	width:100%;
+}
+.mainHeader .dropdown.open .dropdown-menu > li:first-child > a {
+	margin-top: 20px;
+}
+.mainHeader .dropdown.open .dropdown-menu > li:last-child > a {
+	margin-bottom: 20px;
+}
+.mainHeader .dropdown.open .dropdown-menu {
+	font-family: 'ProximaNova-Semibold';
+	min-width: 250px;
+
+}
+.mainHeader .dropdown.open .dropdown-menu .divider {
+	margin: 9px 45px;
+}
+.mainHeader .dropdown.open .dropdown-menu > li > a:hover, 
+.mainHeader .dropdown.open .dropdown-menu > li > a:focus {
+	color: #ff5500;
+}
+.mainHeader .input-group .subscribeButton p {
+	margin: 0;
+	padding-top: 1px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.36);
+}
+.mainHeader .input-group input.form-control {
+	background: #03599e;
+	color: #00a1ff;
+	font-family: 'ProximaNova-Semibold';
+	border: 0;
+    box-shadow: inset 0 -0.5px 0 rgba(255,255,255,.4), inset 0 1px 0 rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(0,0,0,.05);
+	border-radius: 5px;
+}
