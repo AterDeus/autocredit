@@ -45,6 +45,7 @@
 .articleHeader .resetFilter {
 	color:#fff;
 	text-decoration: underline;
+	line-height: 26px
 }
 
 .articleHeader .caret {
@@ -74,11 +75,22 @@
 .articleBody tr.even td{
 	background:#eef4f7;
 }
+.articleBody tr.prime td:not(.orgName) {
+	text-align:center;
+}
+.articleBody tr.additional td {
+	padding:0;
+	height:37px;
+}
 .articleBody td, .table > thead:first-child > tr:first-child > th {
 	vertical-align: middle!important;
 	border:1px solid #dfe7eb;
 }
-.articleBody th {
+.table > thead:first-child > tr:first-child > th {
+	padding:0;
+	line-height:0;
+}
+.articleBody th .thead {
 	background: #feffff;
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZGU5ZjEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
 	background: -moz-linear-gradient(top, #feffff 0%, #dde9f1 100%);
@@ -88,6 +100,25 @@
 	background: -ms-linear-gradient(top, #feffff 0%,#dde9f1 100%);
 	background: linear-gradient(to bottom, #feffff 0%,#dde9f1 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#dde9f1',GradientType=0 );
+	padding:8px;
+	display:block;
+	line-height:1.5;
+}
+.alignColumn {
+	display:inline-block;
+	background: #b0c4d6;
+	width:100%;
+	height:22px;
+}
+th:not(.orgName) .alignColumn:after {
+	content:"";
+	display:block;
+	margin:10px auto;
+	border-top: 5px solid #fff;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	width:0;
+	cursor:pointer;
 }
 .articleBody .orgName {
 	width:34%;
@@ -139,4 +170,7 @@
 }
 .articleBody .creditMore a {
 	text-decoration: underline;
+}
+.articleBody .creditMore strong {
+	margin:0 15px;
 }
